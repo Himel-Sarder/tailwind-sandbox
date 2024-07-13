@@ -8,50 +8,47 @@
     <title>Flex</title>
   </head>
   <body>
-    <!-- Flex and alignment -->
-    <div
-      class="flex flex-wrap h-72 w-100 bg-gray-100 justify-around items-center"
-    >
-      <div class="p-10 border border-blue-600 bg-blue-100">01</div>
-      <div class="p-10 border border-blue-600 bg-blue-100">02</div>
-      <div class="self-start p-10 border border-blue-600 bg-blue-100">03</div>
-      <div class="self-end p-10 border border-blue-600 bg-blue-100">04</div>
+
+
+    <!-- Flex Direction
+      flex-row	        flex-direction: row;
+      flex-row-reverse	flex-direction: row-reverse;
+      flex-col	        flex-direction: column;
+      flex-col-reverse	flex-direction: column-reverse;
+    -->
+
+    <div class="flex flex-col h-[300px] max-w-[400px] bg-black m-7">
+      <div class="h-14 w-14 bg-green-400 p-4 border border-yellow-600">01</div>
+      <div class="h-14 w-14 bg-red-400 p-4 border border-yellow-600">02</div>
+      <div class="h-14 w-14 bg-pink-400 p-4 border border-yellow-600">03</div>
+      <div class="h-14 w-14 bg-sky-400 p-4 border border-yellow-600">04</div>
     </div>
 
-    <!-- Flex Column, Gap and Order -->
-    <div
-      class="flex flex-col gap-4 w-100 bg-gray-200 justify-around items-center"
-    >
-      <div class="order-4 p-10 border border-blue-600 bg-blue-100">01</div>
-      <div class="order-1 p-10 border border-blue-600 bg-blue-100">02</div>
-      <div class="p-10 border border-blue-600 bg-blue-100">03</div>
-      <div class="p-10 border border-blue-600 bg-blue-100">04</div>
+    <div class="flex flex-row-reverse h-[300px] max-w-[400px] bg-black m-7">
+      <div class="h-14 w-14 bg-green-400 p-4 border border-yellow-600">01</div>
+      <div class="h-14 w-14 bg-red-400 p-4 border border-yellow-600">02</div>
+      <div class="h-14 w-14 bg-pink-400 p-4 border border-yellow-600">03</div>
+      <div class="h-14 w-14 bg-sky-400 p-4 border border-yellow-600">04</div>
     </div>
 
-    <!-- Grow and shrink -->
-    <div class="flex w-100 bg-gray-300">
-      <!-- flex-none: Prevent item from growing or shrinking -->
-      <div class="w-64 flex-none p-10 border border-blue-600 bg-blue-100">
-        01
-      </div>
-      <!-- flex-initial:  Allow item to shrink but not grow, taking into account its initial size  -->
-      <div class="w-64 flex-initial p-10 border border-blue-600 bg-blue-100">
-        02
-      </div>
-      <!-- flex-auto: Allow item to grow and shrink, taking into account its initial size -->
-      <div class="w-64 flex-auto p-10 border border-blue-600 bg-blue-100">
-        03
-      </div>
-      <!-- flex-1: Allow item to grow and shrink as needed, ignoring its initial size -->
-      <div class="w-64 flex-1 p-10 border border-blue-600 bg-blue-100">04</div>
-      <div class="p-10 border border-blue-600 bg-blue-100">05</div>
-      <div class="p-10 border border-blue-600 bg-blue-100">06</div>
-      <div class="p-10 border border-blue-600 bg-blue-100">07</div>
+    <div class="flex flex-row h-[300px] max-w-[400px] bg-black m-7">
+      <div class="h-14 w-14 bg-green-400 p-4 border border-yellow-600">01</div>
+      <div class="h-14 w-14 bg-red-400 p-4 border border-yellow-600">02</div>
+      <div class="h-14 w-14 bg-pink-400 p-4 border border-yellow-600">03</div>
+      <div class="h-14 w-14 bg-sky-400 p-4 border border-yellow-600">04</div>
     </div>
-  </body>
-</html>
 
-<!-- Justify Content
+    <div class="flex flex-col-reverse h-[300px] max-w-[400px] bg-black m-7">
+      <div class="h-14 w-14 bg-green-400 p-4 border border-yellow-600">01</div>
+      <div class="h-14 w-14 bg-red-400 p-4 border border-yellow-600">02</div>
+      <div class="h-14 w-14 bg-pink-400 p-4 border border-yellow-600">03</div>
+      <div class="h-14 w-14 bg-sky-400 p-4 border border-yellow-600">04</div>
+    </div>
+
+
+
+
+    <!-- Justify Content
       justify-start	      justify-content: flex-start;
       justify-end	        justify-content: flex-end;
       justify-center	    justify-content: center;
@@ -59,6 +56,276 @@
       justify-around	    justify-content: space-around;
       justify-evenly	    justify-content: space-evenly;
     -->
+
+    <div class="flex justify-center h-[300px] max-w-[400px] bg-black m-7">
+      <div class="h-14 w-14 bg-green-400 p-4 border border-yellow-600">01</div>
+      <div class="h-14 w-14 bg-red-400 p-4 border border-yellow-600">02</div>
+      <div class="h-14 w-14 bg-pink-400 p-4 border border-yellow-600">03</div>
+      <div class="h-14 w-14 bg-sky-400 p-4 border border-yellow-600">04</div>
+    </div>
+
+    <div class="flex justify-start h-[300px] max-w-[400px] bg-black m-7">
+      <div class="h-14 w-14 bg-green-400 p-4 border border-yellow-600">01</div>
+      <div class="h-14 w-14 bg-red-400 p-4 border border-yellow-600">02</div>
+      <div class="h-14 w-14 bg-pink-400 p-4 border border-yellow-600">03</div>
+      <div class="h-14 w-14 bg-sky-400 p-4 border border-yellow-600">04</div>
+    </div>
+
+    <div class="flex justify-between h-[300px] max-w-[400px] bg-black m-7">
+      <div class="h-14 w-14 bg-green-400 p-4 border border-yellow-600">01</div>
+      <div class="h-14 w-14 bg-red-400 p-4 border border-yellow-600">02</div>
+      <div class="h-14 w-14 bg-pink-400 p-4 border border-yellow-600">03</div>
+      <div class="h-14 w-14 bg-sky-400 p-4 border border-yellow-600">04</div>
+    </div>
+
+    <div class="flex justify-around h-[300px] max-w-[400px] bg-black m-7">
+      <div class="h-14 w-14 bg-green-400 p-4 border border-yellow-600">01</div>
+      <div class="h-14 w-14 bg-red-400 p-4 border border-yellow-600">02</div>
+      <div class="h-14 w-14 bg-pink-400 p-4 border border-yellow-600">03</div>
+      <div class="h-14 w-14 bg-sky-400 p-4 border border-yellow-600">04</div>
+    </div>
+
+    <div class="flex justify-evenly h-[300px] max-w-[400px] bg-black m-7">
+      <div class="h-14 w-14 bg-green-400 p-4 border border-yellow-600">01</div>
+      <div class="h-14 w-14 bg-red-400 p-4 border border-yellow-600">02</div>
+      <div class="h-14 w-14 bg-pink-400 p-4 border border-yellow-600">03</div>
+      <div class="h-14 w-14 bg-sky-400 p-4 border border-yellow-600">04</div>
+    </div>
+
+    <div class="flex flex-col justify-center h-[300px] max-w-[400px] bg-black m-7">
+      <div class="h-14 w-14 bg-green-400 p-4 border border-yellow-600">01</div>
+      <div class="h-14 w-14 bg-red-400 p-4 border border-yellow-600">02</div>
+      <div class="h-14 w-14 bg-pink-400 p-4 border border-yellow-600">03</div>
+      <div class="h-14 w-14 bg-sky-400 p-4 border border-yellow-600">04</div>
+    </div>
+
+    <div class="flex flex-col justify-around h-[300px] max-w-[400px] bg-black m-7">
+      <div class="h-14 w-14 bg-green-400 p-4 border border-yellow-600">01</div>
+      <div class="h-14 w-14 bg-red-400 p-4 border border-yellow-600">02</div>
+      <div class="h-14 w-14 bg-pink-400 p-4 border border-yellow-600">03</div>
+      <div class="h-14 w-14 bg-sky-400 p-4 border border-yellow-600">04</div>
+    </div>
+
+
+    <!-- alignment iteam -->
+    <p class="font-bold">alignment-items</p>
+
+    <div class="flex items-center h-[300px] max-w-[400px] bg-black m-7">
+      <div class="h-14 w-14 bg-green-400 p-4 border border-yellow-600">01</div>
+      <div class="h-14 w-14 bg-red-400 p-4 border border-yellow-600">02</div>
+      <div class="h-14 w-14 bg-pink-400 p-4 border border-yellow-600">03</div>
+      <div class="h-14 w-14 bg-sky-400 p-4 border border-yellow-600">04</div>
+    </div>
+
+    <div class="flex items-baseline h-[300px] max-w-[400px] bg-black m-7">
+      <div class="h-14 w-14 bg-green-400 p-4 border border-yellow-600">01</div>
+      <div class="h-14 w-14 bg-red-400 p-4 border border-yellow-600">02</div>
+      <div class="h-14 w-14 bg-pink-400 p-4 border border-yellow-600">03</div>
+      <div class="h-14 w-14 bg-sky-400 p-4 border border-yellow-600">04</div>
+    </div>
+
+    <div class="flex items-end h-[300px] max-w-[400px] bg-black m-7">
+      <div class="h-14 w-14 bg-green-400 p-4 border border-yellow-600">01</div>
+      <div class="h-14 w-14 bg-red-400 p-4 border border-yellow-600">02</div>
+      <div class="h-14 w-14 bg-pink-400 p-4 border border-yellow-600">03</div>
+      <div class="h-14 w-14 bg-sky-400 p-4 border border-yellow-600">04</div>
+    </div>
+
+
+
+    <!-- 
+      flex-wrap	        flex-wrap: wrap;
+      flex-wrap-reverse	flex-wrap: wrap-reverse;
+      flex-nowrap	      flex-wrap: nowrap;
+     -->
+      <p class="font-bold">Flex wrap</p>
+
+      <div class="flex flex-nowrap h-[300px] max-w-[400px] bg-black m-7">
+        <div class="h-14 w-14 bg-green-400 p-4 border border-yellow-600">01</div>
+        <div class="h-14 w-14 bg-red-400 p-4 border border-yellow-600">02</div>
+        <div class="h-14 w-14 bg-pink-400 p-4 border border-yellow-600">03</div>
+        <div class="h-14 w-14 bg-sky-400 p-4 border border-yellow-600">04</div>
+        <div class="h-14 w-14 bg-orange-400 p-4 border border-yellow-600">05</div>
+        <div class="h-14 w-14 bg-purple-400 p-4 border border-yellow-600">06</div>
+        <div class="h-14 w-14 bg-gray-400 p-4 border border-yellow-600">07</div>
+        <div class="h-14 w-14 bg-blue-400 p-4 border border-yellow-600">08</div>
+        <div class="h-14 w-14 bg-yellow-400 p-4 border border-yellow-600">09</div>
+      </div>
+
+      <div class="flex flex-wrap h-[300px] max-w-[400px] bg-black m-7">
+        <div class="h-14 w-14 bg-green-400 p-4 border border-yellow-600">01</div>
+        <div class="h-14 w-14 bg-red-400 p-4 border border-yellow-600">02</div>
+        <div class="h-14 w-14 bg-pink-400 p-4 border border-yellow-600">03</div>
+        <div class="h-14 w-14 bg-sky-400 p-4 border border-yellow-600">04</div>
+        <div class="h-14 w-14 bg-orange-400 p-4 border border-yellow-600">05</div>
+        <div class="h-14 w-14 bg-purple-400 p-4 border border-yellow-600">06</div>
+        <div class="h-14 w-14 bg-gray-400 p-4 border border-yellow-600">07</div>
+        <div class="h-14 w-14 bg-blue-400 p-4 border border-yellow-600">08</div>
+        <div class="h-14 w-14 bg-yellow-400 p-4 border border-yellow-600">09</div>
+      </div>
+
+      <div class="flex flex-wrap-reverse h-[300px] max-w-[400px] bg-black m-7">
+        <div class="h-14 w-14 bg-green-400 p-4 border border-yellow-600">01</div>
+        <div class="h-14 w-14 bg-red-400 p-4 border border-yellow-600">02</div>
+        <div class="h-14 w-14 bg-pink-400 p-4 border border-yellow-600">03</div>
+        <div class="h-14 w-14 bg-sky-400 p-4 border border-yellow-600">04</div>
+        <div class="h-14 w-14 bg-orange-400 p-4 border border-yellow-600">05</div>
+        <div class="h-14 w-14 bg-purple-400 p-4 border border-yellow-600">06</div>
+        <div class="h-14 w-14 bg-gray-400 p-4 border border-yellow-600">07</div>
+        <div class="h-14 w-14 bg-blue-400 p-4 border border-yellow-600">08</div>
+        <div class="h-14 w-14 bg-yellow-400 p-4 border border-yellow-600">09</div>
+      </div>
+
+
+
+
+      <p class="font-bold">Align content</p>
+
+      <div class="flex flex-wrap content-end h-[300px] max-w-[400px] bg-black m-7">
+        <div class="h-14 w-14 bg-green-400 p-4 border border-yellow-600">01</div>
+        <div class="h-14 w-14 bg-red-400 p-4 border border-yellow-600">02</div>
+        <div class="h-14 w-14 bg-pink-400 p-4 border border-yellow-600">03</div>
+        <div class="h-14 w-14 bg-sky-400 p-4 border border-yellow-600">04</div>
+        <div class="h-14 w-14 bg-orange-400 p-4 border border-yellow-600">05</div>
+        <div class="h-14 w-14 bg-purple-400 p-4 border border-yellow-600">06</div>
+        <div class="h-14 w-14 bg-gray-400 p-4 border border-yellow-600">07</div>
+        <div class="h-14 w-14 bg-blue-400 p-4 border border-yellow-600">08</div>
+        <div class="h-14 w-14 bg-yellow-400 p-4 border border-yellow-600">09</div>
+      </div>
+
+      <div class="flex flex-wrap content-center h-[300px] max-w-[400px] bg-black m-7">
+        <div class="h-14 w-14 bg-green-400 p-4 border border-yellow-600">01</div>
+        <div class="h-14 w-14 bg-red-400 p-4 border border-yellow-600">02</div>
+        <div class="h-14 w-14 bg-pink-400 p-4 border border-yellow-600">03</div>
+        <div class="h-14 w-14 bg-sky-400 p-4 border border-yellow-600">04</div>
+        <div class="h-14 w-14 bg-orange-400 p-4 border border-yellow-600">05</div>
+        <div class="h-14 w-14 bg-purple-400 p-4 border border-yellow-600">06</div>
+        <div class="h-14 w-14 bg-gray-400 p-4 border border-yellow-600">07</div>
+        <div class="h-14 w-14 bg-blue-400 p-4 border border-yellow-600">08</div>
+        <div class="h-14 w-14 bg-yellow-400 p-4 border border-yellow-600">09</div>
+      </div>
+
+      <div class="flex flex-wrap content-between h-[300px] max-w-[400px] bg-black m-7">
+        <div class="h-14 w-14 bg-green-400 p-4 border border-yellow-600">01</div>
+        <div class="h-14 w-14 bg-red-400 p-4 border border-yellow-600">02</div>
+        <div class="h-14 w-14 bg-pink-400 p-4 border border-yellow-600">03</div>
+        <div class="h-14 w-14 bg-sky-400 p-4 border border-yellow-600">04</div>
+        <div class="h-14 w-14 bg-orange-400 p-4 border border-yellow-600">05</div>
+        <div class="h-14 w-14 bg-purple-400 p-4 border border-yellow-600">06</div>
+        <div class="h-14 w-14 bg-gray-400 p-4 border border-yellow-600">07</div>
+        <div class="h-14 w-14 bg-blue-400 p-4 border border-yellow-600">08</div>
+        <div class="h-14 w-14 bg-yellow-400 p-4 border border-yellow-600">09</div>
+        <div class="h-14 w-14 bg-gray-400 p-4 border border-yellow-600">10</div>
+        <div class="h-14 w-14 bg-blue-400 p-4 border border-yellow-600">11</div>
+        <div class="h-14 w-14 bg-yellow-400 p-4 border border-yellow-600">12</div>
+        <div class="h-14 w-14 bg-gray-400 p-4 border border-yellow-600">13</div>
+        <div class="h-14 w-14 bg-blue-400 p-4 border border-yellow-600">14</div>
+        <div class="h-14 w-14 bg-yellow-400 p-4 border border-yellow-600">15</div>
+        <div class="h-14 w-14 bg-gray-400 p-4 border border-yellow-600">16</div>
+        <div class="h-14 w-14 bg-blue-400 p-4 border border-yellow-600">17</div>
+        <div class="h-14 w-14 bg-yellow-400 p-4 border border-yellow-600">18</div>
+      </div>
+
+      
+
+
+      <!--Gap -->
+      <p class="font-bold">Gap</p>
+
+      <div class="flex items-baseline gap-4 h-[300px] max-w-[400px] bg-black m-7">
+        <div class="h-14 w-14 bg-green-400 p-4 border border-yellow-600">01</div>
+        <div class="h-14 w-14 bg-red-400 p-4 border border-yellow-600">02</div>
+        <div class="h-14 w-14 bg-pink-400 p-4 border border-yellow-600">03</div>
+        <div class="h-14 w-14 bg-sky-400 p-4 border border-yellow-600">04</div>
+      </div>
+
+      <div class="flex justify-center gap-7 h-[300px] max-w-[400px] bg-black m-7">
+        <div class="h-14 w-14 bg-green-400 p-4 border border-yellow-600">01</div>
+        <div class="h-14 w-14 bg-red-400 p-4 border border-yellow-600">02</div>
+        <div class="h-14 w-14 bg-pink-400 p-4 border border-yellow-600">03</div>
+        <div class="h-14 w-14 bg-sky-400 p-4 border border-yellow-600">04</div>
+      </div>
+
+      <div class="flex items-center gap-12 h-[300px] max-w-[400px] bg-black m-7">
+        <div class="h-14 w-14 bg-green-400 p-4 border border-yellow-600">01</div>
+        <div class="h-14 w-14 bg-red-400 p-4 border border-yellow-600">02</div>
+        <div class="h-14 w-14 bg-pink-400 p-4 border border-yellow-600">03</div>
+        <div class="h-14 w-14 bg-sky-400 p-4 border border-yellow-600">04</div>
+      </div>
+
+
+
+      <!-- align-self -->
+      <p class="font-bold">Align Self</p>
+
+      <div class="flex h-[300px] max-w-[400px] bg-black m-7">
+        <div class="h-14 w-14 bg-green-400 p-4 border border-yellow-600 self-end">01</div>
+        <div class="h-14 w-14 bg-red-400 p-4 border border-yellow-600">02</div>
+        <div class="h-14 w-14 bg-pink-400 p-4 border border-yellow-600">03</div>
+        <div class="h-14 w-14 bg-sky-400 p-4 border border-yellow-600">04</div>
+      </div>
+      <div class="flex h-[300px] max-w-[400px] bg-black m-7">
+        <div class="h-14 w-14 bg-green-400 p-4 border border-yellow-600">01</div>
+        <div class="h-14 w-14 bg-red-400 p-4 border border-yellow-600 self-center">02</div>
+        <div class="h-14 w-14 bg-pink-400 p-4 border border-yellow-600">03</div>
+        <div class="h-14 w-14 bg-sky-400 p-4 border border-yellow-600">04</div>
+      </div>
+      <div class="flex items-end h-[300px] max-w-[400px] bg-black m-7">
+        <div class="h-14 w-14 bg-green-400 p-4 border border-yellow-600 self-start">01</div>
+        <div class="h-14 w-14 bg-red-400 p-4 border border-yellow-600">02</div>
+        <div class="h-14 w-14 bg-pink-400 p-4 border border-yellow-600 self-start">03</div>
+        <div class="h-14 w-14 bg-sky-400 p-4 border border-yellow-600">04</div>
+      </div>
+
+
+
+
+      <!--Grow-->
+      <p class="font-bold">Grow</p>
+
+      <div class="flex h-[300px] max-w-[400px] bg-black m-7">
+        <div class="h-14 w-14 bg-green-400 p-4 border border-yellow-600 grow">01</div>
+        <div class="h-14 w-14 bg-red-400 p-4 border border-yellow-600">02</div>
+        <div class="h-14 w-14 bg-pink-400 p-4 border border-yellow-600 self-start">03</div>
+        <div class="h-14 w-14 bg-sky-400 p-4 border border-yellow-600">04</div>
+      </div>
+
+      <!-- Shrink -->
+       <p class="font-bold">Shrink</p>
+       <div class="flex h-[300px] max-w-[400px] bg-black m-7">
+        <div class="h-14 w-24 bg-green-400 p-4 border border-yellow-600 shrink-0">01</div>
+        <div class="h-14 w-24 bg-red-400 p-4 border border-yellow-600">02</div>
+        <div class="h-14 w-24 bg-pink-400 p-4 border border-yellow-600">03</div>
+        <div class="h-14 w-24 bg-sky-400 p-4 border border-yellow-600">04</div>
+      </div>
+
+    
+      <!--Order-->
+      <p class="font-bold">Order</p>
+      <p>Before Order</p>
+       <div class="flex h-[300px] max-w-[400px] bg-black m-7">
+        <div class="h-14 w-24 bg-green-400 p-4 border border-yellow-600">01</div>
+        <div class="h-14 w-24 bg-red-400 p-4 border border-yellow-600">02</div>
+        <div class="h-14 w-24 bg-pink-400 p-4 border border-yellow-600">03</div>
+        <div class="h-14 w-24 bg-sky-400 p-4 border border-yellow-600">04</div>
+      </div>
+      <p>After Order</p>
+       <div class="flex h-[300px] max-w-[400px] bg-black m-7">
+        <div class="h-14 w-24 bg-green-400 p-4 border border-yellow-600 order-3">01</div>
+        <div class="h-14 w-24 bg-red-400 p-4 border border-yellow-600 order-1">02</div>
+        <div class="h-14 w-24 bg-pink-400 p-4 border border-yellow-600 order-0">03</div>
+        <div class="h-14 w-24 bg-sky-400 p-4 border border-yellow-600 order-2">04</div>
+      </div>
+
+  </body>
+</html>
+
+
+
+
+<!-- Link : https://youtu.be/53kRTGGDYd8?si=mUHFCvUrkjHPd3qs -->
+
+
 
 <!-- 
       items-start	align-items: flex-start;
@@ -68,18 +335,6 @@
       items-stretch	align-items: stretch;
      -->
 
-<!-- Flex Direction
-      flex-row	        flex-direction: row;
-      flex-row-reverse	flex-direction: row-reverse;
-      flex-col	        flex-direction: column;
-      flex-col-reverse	flex-direction: column-reverse;
-    -->
-
-<!-- 
-      flex-wrap	        flex-wrap: wrap;
-      flex-wrap-reverse	flex-wrap: wrap-reverse;
-      flex-nowrap	      flex-wrap: nowrap;
-     -->
 
 <!-- Flex Properties
       flex-none	    flex: none;     
