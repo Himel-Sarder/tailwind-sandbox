@@ -5,48 +5,131 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            transitionDuration: {
-              0: '0ms',
-              2000: '2000ms',
-            },
-          },
-        },
-      }
-    </script>
+    
     <title>Transform & Transition</title>
   </head>
   <body>
+
     <!-- No Transition -->
     <button
-      class="px-8 py-2 m-24 text-white bg-blue-500 rounded hover:bg-blue-700"
+      class="px-8 py-2 m-24 text-white bg-blue-500 rounded hover:bg-blue-900"
     >
-      Click me
+      No Transition
     </button>
 
     <!-- Transition -->
+
+    <!-- Duration 
+     
+    duration-0	transition-duration: 0s;
+    duration-75	transition-duration: 75ms;
+    duration-100	transition-duration: 100ms;
+    duration-150	transition-duration: 150ms;
+    duration-200	transition-duration: 200ms;
+    duration-300	transition-duration: 300ms;
+    duration-500	transition-duration: 500ms;
+    duration-700	transition-duration: 700ms;
+    duration-1000	transition-duration: 1000ms;
+    -->
     <button
-      class="px-8 py-2 m-24 text-white bg-blue-500 rounded transition-colors duration-700 hover:bg-blue-700"
+    class="px-8 py-2 m-24 text-white bg-blue-500 rounded transition-colors duration-75 hover:bg-blue-700"
     >
-      Click me
+      Duration-75
     </button>
 
-    <!-- Transition & Transform -->
     <button
-      class="px-8 py-2 m-24 text-white bg-blue-500 rounded transition ease-in-out delay-150 duration-2000 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500"
+    class="px-8 py-2 m-24 text-white bg-blue-500 rounded transition-colors duration-100 hover:bg-blue-700"
     >
-      Click me
+      Duration-100
     </button>
+
+    <button
+    class="px-8 py-2 m-24 text-white bg-blue-500 rounded transition-colors duration-1000 hover:bg-blue-700"
+    >
+      Duration-1000
+    </button>
+
+    <!--Timing function
+
+    ease-linear	transition-timing-function: linear;
+    ease-in	transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+    ease-out	transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    ease-in-out	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    -->
+
+    <button
+    class="ease-in px-8 py-2 m-24 text-white bg-blue-500 rounded transition-colors duration-1000 hover:bg-blue-700"
+    >
+      ease-in
+    </button>
+    <button
+    class="ease-in-out px-8 py-2 m-24 text-white bg-blue-500 rounded transition-colors duration-1000 hover:bg-blue-700"
+    >
+      ease-out
+    </button>
+
+
+
+    <!--delay
+    
+    delay-0	transition-delay: 0s;
+    delay-75	transition-delay: 75ms;
+    delay-100	transition-delay: 100ms;
+    delay-150	transition-delay: 150ms;
+    delay-200	transition-delay: 200ms;
+    delay-300	transition-delay: 300ms;
+    delay-500	transition-delay: 500ms;
+    delay-700	transition-delay: 700ms;
+    delay-1000	transition-delay: 1000ms;
+    -->
+    <button
+    class="ease-in-out delay-75 px-8 py-2 m-24 text-white bg-pink-500 rounded transition-colors duration-1000 hover:bg-red-500"
+    >
+      delay-75
+    </button>
+    <button
+    class="ease-in-out delay-1000 px-8 py-2 m-24 text-white bg-pink-500 rounded transition-colors duration-1000 hover:bg-orange-500"
+    >
+      delay-1000
+    </button>
+
+
+    <!-- scale -->
+    <img src="../assets/img/img1.jpg" alt="" class="scale-50"/>
+    <img src="../assets/img/img1.jpg" alt="" class="scale-100"/>
+
+    <!-- rotate -->
+    <img src="../assets/img/img1.jpg" alt="" class="scale-50 rotate-45"/>
+    <img src="../assets/img/img1.jpg" alt="" class="scale-50 rotate-90"/>
+    <img src="../assets/img/img1.jpg" alt="" class="scale-50 rotate-180"/>
+
+    <!-- translate -->
+    <img src="../assets/img/img1.jpg" alt="" class="scale-50 translate-x-10"/>
+    <img src="../assets/img/img1.jpg" alt="" class="scale-50 -translate-x-10"/>
+    <img src="../assets/img/img1.jpg" alt="" class="scale-50 translate-y-20"/>
+    <img src="../assets/img/img1.jpg" alt="" class="scale-50 -translate-y-100"/>
+
+    <!-- skew -->
+    <img src="../assets/img/img1.jpg" alt="" class="scale-50 skew-x-3"/>
+    <img src="../assets/img/img1.jpg" alt="" class="scale-50 skew-x-6"/>
+    <img src="../assets/img/img1.jpg" alt="" class="scale-50 skew-x-12"/>
+    <img src="../assets/img/img1.jpg" alt="" class="scale-50 -skew-x-12"/>
+    <img src="../assets/img/img1.jpg" alt="" class="scale-50 skew-y-12"/>
+    <img src="../assets/img/img1.jpg" alt="" class="scale-50 -skew-y-12"/>
+
+    <!-- origin -->
+    <img src="../assets/img/img1.jpg" alt="" class="origin-bottom-left"/>
+    <img src="../assets/img/img1.jpg" alt="" class="scale-50 origin-center"/>
+    <img src="../assets/img/img1.jpg" alt="" class="scale-50 origin-left"/>
+
 
     <!-- Transform & Transition -->
     <img
       src="../assets/img/img1.jpg"
       alt=""
-      class="hover:transform hover:rotate-180 hover:scale-75 hover:skew-x-12 transition"
+      class="hover:transform hover:rotate-180 hover:scale-40 hover:skew-x-12 transition"
     />
+
   </body>
 </html>
 
